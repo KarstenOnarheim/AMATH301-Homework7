@@ -44,7 +44,7 @@ A3 = odefun(1, [2, 3, 4])
 y0 = [1, 2, 3]
 
 A4 = np.zeros([3, 10])
-qvals = np.logspace(1, 1e-5, 10)
+qvals = np.logspace(0, -5, 10)
 counter = 0
 for q in qvals:
     yFinal = scipy.integrate.solve_ivp(odefun, [0,30], y0).y
