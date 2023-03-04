@@ -100,7 +100,7 @@ A13 = A
 dt = 0.01
 tspan = np.arange(0, 400 + dt, dt)
 x = np.zeros([len(tspan), 2])
-x[0] = [2,3]
+x[0] = [2,0]
 ## Part h
 #for k in range(len(tspan) - 1):
 #    x[k+1] = x[k] + dt*A@x[k]
@@ -108,7 +108,7 @@ x[0] = [2,3]
 
 ## Part i
 x = np.zeros([len(tspan), 2])
-x[0] = [2,3]
+x[0] = [2,0]
 I = np.eye(2)
 C = I - dt*A
 A15 = C
