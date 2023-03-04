@@ -102,9 +102,9 @@ tspan = np.arange(0, 400 + dt, dt)
 x = np.zeros([len(tspan), 2])
 x[0] = [2,0]
 ## Part h
-#for k in range(len(tspan) - 1):
-#    x[k+1] = x[k] + dt*A@x[k]
-#A14 = x
+for k in range(len(tspan) - 1):
+    x[k+1] = x[k] + dt*A@x[k]
+A14 = x
 
 ## Part i
 x = np.zeros([len(tspan), 2])
@@ -119,6 +119,7 @@ xvals = np.zeros(len(x))
 for k in range(len(x)):
     xvals[k] = x[k][0]
 A16 = xvals
+print(A16)
 # To create C, we can just do subtraction and multiplication
 
 
