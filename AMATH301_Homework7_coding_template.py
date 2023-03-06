@@ -119,7 +119,6 @@ xvals = np.zeros(len(x))
 for k in range(len(x)):
     xvals[k] = x[k][0]
 A16 = xvals
-print(A16)
 # To create C, we can just do subtraction and multiplication
 
 
